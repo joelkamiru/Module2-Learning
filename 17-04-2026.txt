@@ -1,0 +1,7 @@
+Rest and Spread syntax in JS
+=============================
+...
+Rest=collect
+Spread=expand
+REST Syntax
+------------

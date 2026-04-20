@@ -1,0 +1,51 @@
+A JS module is a file that contains code which is scoped to that file and can optionnally export
+specific parts of that code so that other files can use them
+export: used to make variables,functions or objects available to other modules 
+import:used to bring the exported code from another module into the current file
+
+JS environment: a platform where JS code is executed 
+the environment has:
+-A JS engine: to read and execute the code 
+-A global object
+-extra built-in features and APIs
+-rules for how asynchronous tasks are handled 
+
+1. Browser environment
+is provided by browsers
+2.Node.js environment
+
+a. JS engine 
+reads,interpretes and executes JS code
+Ex: Chrome uses V8
+Node.js uses V8
+Firefox uses SpiderMonkey
+b. Global object
+is a main top-level object provided by the environment
+It contains values, functions and APIS 
+browser:window
+node.js:global
+
+c. call stack:
+* reads the file
+* store the functions definitions
+* pushes the first function to the call stack
+*runs it 
+*removes it from the stack 
+*goes to the second function
+
+d.WEb APIS
+a feature provided by the browsers environment that JS can use to interact with the browser capabilities 
+Ex: 
+*DOM APIS:allows to interact with HTML
+*FETCH API: fetch()-> to make network requests
+*TIMER API:gives JS timer functions like setTimeout or setInterval
+
+e.callback queue
+f. Promise
+JS object representing the completion or failure of an asynchronous operation 
+A promise has 3 states:
+* pending:the operation is still in progress
+*fulfilled:the operation is completed successfully
+*rejected:operation failed
+g.Event Loop
+checks whether the call stack is empty and if it is it moves the tasks into the stack
